@@ -1,0 +1,111 @@
+
+.admin-orders {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 24px;
+  color: #202124;
+}
+
+.admin-orders h1 {
+  margin-bottom: 8px;
+}
+
+.admin-subtitle {
+  color: #6b7280;
+  margin-bottom: 28px;
+}
+
+.admin-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.admin-summary > div,
+.admin-order-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 18px;
+  background: #fff;
+}
+
+.admin-summary span,
+.admin-summary strong {
+  display: block;
+}
+
+.admin-summary span {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.admin-summary strong {
+  font-size: 25px;
+  margin-top: 8px;
+}
+
+.admin-order-list {
+  display: grid;
+  gap: 16px;
+}
+
+.admin-order-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.admin-order-top h3 {
+  margin: 0 0 6px;
+}
+
+.admin-order-top small {
+  color: #6b7280;
+}
+
+.admin-order-items {
+  margin: 18px 0;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.admin-order-items p {
+  margin: 8px 0;
+}
+
+.admin-status-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  flex-wrap: wrap;
+}
+
+.admin-status-label select {
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: white;
+}
+
+.admin-error {
+  color: #b91c1c;
+  margin-bottom: 16px;
+}
+
+.admin-message {
+  text-align: center;
+  padding: 40px;
+}
+
+@media (max-width: 600px) {
+  .admin-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .admin-orders {
+    padding: 16px;
+  }
+}
